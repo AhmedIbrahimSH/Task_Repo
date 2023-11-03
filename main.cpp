@@ -19,6 +19,10 @@ int getMin(vector<int>& numbers){
         }
     }
     return min;
+int getAverage(vector<int>& numbers){
+    int sum = getSum(numbers);
+    int average = sum / numbers.size();
+    return average;
 }
 
 
@@ -28,4 +32,5 @@ int main(){
     int sum = getSum(numbers);
     cout << "Sum of numbers is: " << sum << endl;
     cout << "Min of numbers is: " << getMin(numbers) << endl;
+    cout << "Average of numbers is: " << getAverage(numbers) << endl;
 }
